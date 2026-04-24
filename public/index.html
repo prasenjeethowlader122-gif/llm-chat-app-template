@@ -3,17 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>LLM Chat App</title>
+		<title>Laravel Security Auditor</title>
 		<style>
 			:root {
-				--primary-color: #f6821f;
-				--primary-hover: #e67e22;
-				--light-bg: #f9fafb;
-				--border-color: #e5e7eb;
-				--text-color: #1f2937;
-				--text-light: #6b7280;
-				--user-msg-bg: #fff2e6;
-				--assistant-msg-bg: #f3f4f6;
+				--primary-color: #ff2d20;
+				--primary-hover: #e3261a;
+				--light-bg: #111827;
+				--border-color: #374151;
+				--text-color: #f3f4f6;
+				--text-light: #9ca3af;
+				--user-msg-bg: #1f2937;
+				--assistant-msg-bg: #374151;
 			}
 
 			* {
@@ -28,7 +28,8 @@
 					Cantarell, sans-serif;
 				line-height: 1.6;
 				color: var(--text-color);
-				max-width: 800px;
+				background-color: #030712;
+				max-width: 900px;
 				margin: 0 auto;
 				padding: 1rem;
 			}
@@ -90,7 +91,7 @@
 				display: flex;
 				padding: 0.75rem;
 				border-top: 1px solid var(--border-color);
-				background-color: white;
+				background-color: var(--light-bg);
 			}
 
 			#user-input {
@@ -99,6 +100,8 @@
 				border: 1px solid var(--border-color);
 				border-radius: 4px;
 				font-family: inherit;
+				background-color: var(--user-msg-bg);
+				color: var(--text-color);
 				resize: none;
 				min-height: 44px;
 			}
@@ -144,28 +147,28 @@
 	</head>
 	<body>
 		<header>
-			<h1>Cloudflare AI Chat</h1>
-			<p>Powered by Cloudflare Workers AI</p>
+			<h1>Laravel Security Auditor</h1>
+			<p>Advanced Vulnerability Analysis & Best Practices</p>
 		</header>
 
 		<div class="chat-container">
 			<div id="chat-messages" class="chat-messages">
 				<div class="message assistant-message">
 					<p>
-						Hello! I'm an LLM chat app powered by Cloudflare Workers AI. How can
-						I help you today?
+						Welcome. I am your specialized Laravel Security Auditor.
+						Paste your code (controllers, models, routes) or ask a security question to begin an in-depth audit.
 					</p>
 				</div>
 			</div>
 
 			<div class="typing-indicator" id="typing-indicator">
-				AI is thinking...
+				Auditing code...
 			</div>
 
 			<div class="message-input">
 				<textarea
 					id="user-input"
-					placeholder="Type your message here..."
+					placeholder="Paste code or ask a security question..."
 					rows="1"
 					autofocus
 				></textarea>
@@ -174,7 +177,7 @@
 		</div>
 
 		<footer>
-			<p>Cloudflare Workers AI Chat Template &copy; 2025</p>
+			<p>Laravel Security Auditor Powered by Cloudflare Workers AI &copy; 2025</p>
 		</footer>
 
 		<!-- Chat app script -->
